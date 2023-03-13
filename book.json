@@ -1,0 +1,24 @@
+{
+    "structure": {
+        "readme": "README.md"
+    },
+    "title": "SkillBook",
+    "author": "李皓民",
+    "description": "记录技能学习内容与过程",
+    "plugins": ["mathjax-pro", "-search", "theme-comscore", "anchor-navigation-ex", "search-pro", "-lunr", "insert-logo", "expandable-chapters", "sidebar-style", "splitter", "emphasize", "flexible-alerts", "code"],
+    "pluginsConfig": {
+        "anchor-navigation-ex": {
+            "showLevel": true,
+            "showGrTop": false
+        },
+        "insert-logo": {
+            "url": "https://picture-bed-bucket.oss-cn-beijing.aliyuncs.com/img/333.png",
+            "style": "background: none,height: 70px; height: 70px"
+        },
+        "sidebar-style": {
+            "title": "SkillBook",
+            "author": "李皓民"
+        }
+    }
+    
+}
