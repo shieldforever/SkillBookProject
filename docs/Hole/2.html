@@ -1,0 +1,415 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Windows10 Docker 小坑总结 · SkillBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="李皓民">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sidebar-style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-flexible-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="3.html" />
+    
+    
+    <link rel="prev" href="1.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../English/">
+            
+                <a href="../English/">
+            
+                    
+                    English
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../C++/">
+            
+                <a href="../C++/">
+            
+                    
+                    C++
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Trick/">
+            
+                <a href="../Trick/">
+            
+                    
+                    技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    坑
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    Windows10 虚拟机 Pytorch Numpy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    Windows10 Docker 小坑总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    docker使用dockerfile进行build时提示“/bin/sh: ./xxx.sh: not found”的可能原因
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../StyleExample/">
+            
+                <a href="../StyleExample/">
+            
+                    
+                    Style
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Windows10 Docker 小坑总结</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#windows10-docker-&#x5C0F;&#x5751;&#x603B;&#x7ED3;"><b>1. </b>Windows10 Docker &#x5C0F;&#x5751;&#x603B;&#x7ED3;</a></li><ul><li><span class="title-icon "></span><a href="#1-docker-machine&#x751F;&#x6210;&#x7684;default&#x865A;&#x62DF;&#x673A;&#x65F6;&#x4E0D;&#x65F6;&#x6B7B;&#x673A;fatal--no-bootable-medium-found-system-halted&#x3002;"><b>1.1. </b>1 docker-machine&#x751F;&#x6210;&#x7684;default&#x865A;&#x62DF;&#x673A;&#x65F6;&#x4E0D;&#x65F6;&#x6B7B;&#x673A;FATAL : No Bootable medium found! System halted&#x3002;</a></li><li><span class="title-icon "></span><a href="#&#x81EA;&#x52A8;&#x6302;&#x8F7D;&#x5931;&#x8D25;"><b>1.2. </b>&#x81EA;&#x52A8;&#x6302;&#x8F7D;&#x5931;&#x8D25;</a></li><li><span class="title-icon "></span><a href="#dockerfile&#x5728;build&#x65F6;&#x627E;&#x4E0D;&#x5230;&#x67D0;&#x4E9B;&#x6587;&#x4EF6;"><b>1.3. </b>dockerfile&#x5728;build&#x65F6;&#x627E;&#x4E0D;&#x5230;&#x67D0;&#x4E9B;&#x6587;&#x4EF6;</a></li></ul></ul></div><a href="#windows10-docker-&#x5C0F;&#x5751;&#x603B;&#x7ED3;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="windows10-docker-&#x5C0F;&#x5751;&#x603B;&#x7ED3;"><a name="windows10-docker-&#x5C0F;&#x5751;&#x603B;&#x7ED3;" class="anchor-navigation-ex-anchor" href="#windows10-docker-&#x5C0F;&#x5751;&#x603B;&#x7ED3;"><i class="fa fa-link" aria-hidden="true"></i></a>1. Windows10 Docker &#x5C0F;&#x5751;&#x603B;&#x7ED3;</h1>
+<h2 id="1-docker-machine&#x751F;&#x6210;&#x7684;default&#x865A;&#x62DF;&#x673A;&#x65F6;&#x4E0D;&#x65F6;&#x6B7B;&#x673A;fatal--no-bootable-medium-found-system-halted&#x3002;"><a name="1-docker-machine&#x751F;&#x6210;&#x7684;default&#x865A;&#x62DF;&#x673A;&#x65F6;&#x4E0D;&#x65F6;&#x6B7B;&#x673A;fatal--no-bootable-medium-found-system-halted&#x3002;" class="anchor-navigation-ex-anchor" href="#1-docker-machine&#x751F;&#x6210;&#x7684;default&#x865A;&#x62DF;&#x673A;&#x65F6;&#x4E0D;&#x65F6;&#x6B7B;&#x673A;fatal--no-bootable-medium-found-system-halted&#x3002;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. 1 docker-machine&#x751F;&#x6210;&#x7684;default&#x865A;&#x62DF;&#x673A;&#x65F6;&#x4E0D;&#x65F6;&#x6B7B;&#x673A;FATAL : No Bootable medium found! System halted&#x3002;</h2>
+<p><a href="https://blog.csdn.net/weixin_42583714/article/details/91441539" target="_blank">&#x539F;&#x56E0;&#x53CA;&#x89E3;&#x51B3;&#x65B9;&#x6848;</a></p>
+<h2 id="&#x81EA;&#x52A8;&#x6302;&#x8F7D;&#x5931;&#x8D25;"><a name="&#x81EA;&#x52A8;&#x6302;&#x8F7D;&#x5931;&#x8D25;" class="anchor-navigation-ex-anchor" href="#&#x81EA;&#x52A8;&#x6302;&#x8F7D;&#x5931;&#x8D25;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x81EA;&#x52A8;&#x6302;&#x8F7D;&#x5931;&#x8D25;</h2>
+<p>&#x672C;&#x8EAB;&#x4E3B;&#x8981;&#x53C2;&#x8003;&#x7684;&#x662F;<a href="https://blog.csdn.net/baidu_38115306/article/details/102987194" target="_blank">&#x8FD9;&#x4E2A;</a>&#xFF0C;&#x52FE;&#x9009;&#x4E86;&#x81EA;&#x52A8;&#x6302;&#x8F7D;&#x4E5F;&#x4E00;&#x76F4;&#x4E0D;&#x884C;&#xFF0C;&#x8BD5;&#x4E86;&#x7F51;&#x4E0A;&#x7684;&#x5176;&#x4ED6;&#x65B9;&#x6CD5;&#x4E5F;&#x4E0D;&#x884C;&#xFF0C;&#x6700;&#x540E;&#xFF0C;&#x5728;&#x6211;&#x89E3;&#x51B3;&#x7684;&#x4E0A;&#x9762;&#x90A3;&#x4E2A;&#x6B7B;&#x673A;&#x95EE;&#x9898;&#x540E;&#xFF0C;&#x4ED6;&#x5C31;&#x597D;&#x4E86;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x7B2C;&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x89E3;&#x51B3;&#x4E86;&#x4EE5;&#x540E;&#xFF0C;&#x81EA;&#x52A8;&#x6302;&#x8F7D;&#x53EA;&#x9700;&#x8981;&#x52FE;&#x9009;&#x4E00;&#x4E0B;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</p>
+<h2 id="dockerfile&#x5728;build&#x65F6;&#x627E;&#x4E0D;&#x5230;&#x67D0;&#x4E9B;&#x6587;&#x4EF6;"><a name="dockerfile&#x5728;build&#x65F6;&#x627E;&#x4E0D;&#x5230;&#x67D0;&#x4E9B;&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#dockerfile&#x5728;build&#x65F6;&#x627E;&#x4E0D;&#x5230;&#x67D0;&#x4E9B;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. dockerfile&#x5728;build&#x65F6;&#x627E;&#x4E0D;&#x5230;&#x67D0;&#x4E9B;&#x6587;&#x4EF6;</h2>
+<p>&#x6CE8;&#x610F;&#x6587;&#x4EF6;&#x7F16;&#x7801;&#xFF01;&#x6CE8;&#x610F;&#x6587;&#x4EF6;&#x7F16;&#x7801;&#xFF01;&#x6CE8;&#x610F;&#x6587;&#x4EF6;&#x7F16;&#x7801;&#xFF01;
+&#x4E00;&#x5B9A;&#x8981;&#x6CE8;&#x610F;&#x662F;crlf&#x8FD8;&#x662F;lf&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1.html" class="navigation navigation-prev " aria-label="Previous page: Windows10 虚拟机 Pytorch Numpy">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="3.html" class="navigation navigation-next " aria-label="Next page: docker使用dockerfile进行build时提示“/bin/sh: ./xxx.sh: not found”的可能原因">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Windows10 Docker 小坑总结","level":"1.5.2","depth":2,"next":{"title":"docker使用dockerfile进行build时提示“/bin/sh: ./xxx.sh: not found”的可能原因","level":"1.5.3","depth":2,"path":"Hole/3.md","ref":"Hole/3.md","articles":[]},"previous":{"title":"Windows10 虚拟机 Pytorch Numpy","level":"1.5.1","depth":2,"path":"Hole/1.md","ref":"Hole/1.md","articles":[]},"dir":"ltr"},"config":{"plugins":["mathjax-pro","-search","theme-comscore","anchor-navigation-ex","search-pro","-lunr","insert-logo","expandable-chapters","sidebar-style","splitter","emphasize","flexible-alerts","code","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sidebar-style":{"author":"李皓民","title":"SkillBook"},"emphasize":{},"livereload":{},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"showLevel":true,"showGrTop":false,"showGoTop":true,"printLog":false,"multipleH1":true,"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false}},"theme-comscore":{},"mathjax-pro":{"forceSVG":false,"version":"2.7.7"},"flexible-alerts":{"danger":{"className":"danger","icon":"fa fa-ban","label":"Attention"},"note":{"className":"info","icon":"fa fa-info-circle","label":"Note"},"style":"callout","tip":{"className":"tip","icon":"fa fa-lightbulb-o","label":"Tip"},"warning":{"className":"warning","icon":"fa fa-exclamation-triangle","label":"Warning"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none,height: 70px; height: 70px","url":"https://picture-bed-bucket.oss-cn-beijing.aliyuncs.com/img/333.png"},"expandable-chapters":{}},"theme":"default","author":"李皓民","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"SkillBook","gitbook":"*","description":"记录技能学习内容与过程"},"file":{"path":"Hole/2.md","mtime":"2023-03-13T15:14:49.655Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-03-14T03:30:20.869Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax-pro/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sidebar-style/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-flexible-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
