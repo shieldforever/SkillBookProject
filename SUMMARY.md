@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [English](English/README.md)
 * [C++](C++/README.md)
+* [技巧](Trick/README.md)
 * [坑](Hole/README.md)
     * [Windows10 虚拟机 Pytorch Numpy](Hole/1.md)
     * [Windows10 Docker 小坑总结](Hole/2.md)
