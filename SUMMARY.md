@@ -16,5 +16,6 @@
     * [Windows10 Docker 小坑总结](Hole/2.md)
     * [docker使用dockerfile进行build时提示“/bin/sh: ./xxx.sh: not found”的可能原因](Hole/3.md)
     * [ubuntu下git clone 提示 gnutls_handshake() failed: Error in the pull function. 解决方法](Hole/4.md)
+    * [在conda创建环境时遇到 Ubuntu AttributeError: module ‘lib’ has no attribute ‘X509_V_FLAG_CB_ISSUER_CHECK’](Hole/5.md)
 * [Style](StyleExample/README.md)
 
